@@ -26,7 +26,7 @@ const troubleshootingMessage = `Troubleshooting:
   1. Make sure you have installed sys-http
   2. Double check your switch Ip address
   3. Be sure your game has event data
-  4. Close and reopen your game`;
+  4. Close and reopen your game (the events might not be where we expect in memory)`;
 
 export const EventReaderView = () => {
   const [switchIp] = useSwitchIp();
@@ -64,7 +64,7 @@ export const EventReaderView = () => {
     <MainLayout>
       <Grid item>
         <Typography variant="h4" align="center">
-          Read events and raid seeds
+          Read Events
         </Typography>
       </Grid>
       <Grid item className={classes.fullWidth}>
