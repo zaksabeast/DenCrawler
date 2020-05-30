@@ -1,0 +1,24 @@
+{
+  "name": "den-crawler",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel parcel-index.html",
+    "build": "parcel build parcel-index.html --public-url ./ -o dist/index.html",
+    "build:fbs:event": "flatc --js -o ./src/flatbuffers/ ./flatbuffers/NestHoleDistributionEncounter8Archive.fbs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.10.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
+    "flatbuffers": "^1.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
